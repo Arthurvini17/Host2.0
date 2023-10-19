@@ -24,19 +24,29 @@ header {
     color: #fff;
     width: 100vw;
     position: fixed;
-   
+}
+
+header .left {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 60px;
+    gap: 10px;
 }
 
 header nav ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+   justify-content: flex-start;
+   gap: 10px;
     list-style: none;
     font-size: 15px;
-    margin-right: 60px;
+    
 }
 
+.left-align {
+    margin-right: auto; 
+}
 main {
     grid-area: main;
     padding: 20px;
@@ -53,7 +63,6 @@ main {
     border: 3px solid #ccc;
     border-radius: 3px;
     border-bottom: 3px solid #267aea;
-    
 
 }
 
@@ -168,7 +177,10 @@ option {
     background-color: #267aea;
     font-weight: bolder;
     transition: background-color 1.5s, color 300ms;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 
 }
 

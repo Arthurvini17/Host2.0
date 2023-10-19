@@ -13,6 +13,18 @@
 <body>
     <div class="container-all">
         <header>
+            <ul class="left">
+                @if (Auth::check())
+                    <li>
+                        <p>Olá {{ Auth::user()->name }}
+                    </li>
+                    </p>
+                @endif
+
+                <li><a href="{{route('logout')}}">Sair</a></li>
+            </ul>
+
+
             <nav>
                 <ul>
                     <li>Inicio</li>
@@ -21,8 +33,10 @@
                     <li>Contato</li>
                     <li>Criar conta</li>
                     <li>Entrar na conta</li>
+
                 </ul>
             </nav>
+
         </header>
         <main>
             <section id="home">
@@ -98,9 +112,9 @@
                             <p>Auto instalador do WordPress</p>
                             <p>Auto instalador de Lojas Virtuais</p>
                             <p>Criador de Sites</p>
-                            <p>30 GB de espaço em disco</p>
-                            <p>30 Domínios Hospedados</p>
-                            <p>30 contas de E-mail</p>
+                            <p>80 GB de espaço em disco</p>
+                            <p>80 Domínios Hospedados</p>
+                            <p>80 contas de E-mail</p>
                             <p>Transferência ilimitada</p>
                             <p>PHP & MySQL</p>
                             <p>SSL Grátis</p>
@@ -123,9 +137,9 @@
                             <p>Auto instalador do WordPress</p>
                             <p>Auto instalador de Lojas Virtuais</p>
                             <p>Criador de Sites</p>
-                            <p>30 GB de espaço em disco</p>
-                            <p>30 Domínios Hospedados</p>
-                            <p>30 contas de E-mail</p>
+                            <p>200; GB de espaço em disco</p>
+                            <p>200 Domínios Hospedados</p>
+                            <p>200 contas de E-mail</p>
                             <p>Transferência ilimitada</p>
                             <p>PHP & MySQL</p>
                             <p>SSL Grátis</p>
