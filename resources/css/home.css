@@ -24,29 +24,37 @@ header {
     color: #fff;
     width: 100vw;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: underline;
+    color: #fff;
 }
 
 header .left {
     list-style: none;
     justify-content: flex-end;
     display: flex;
-    margin-right: 60px;
     gap: 10px;
 }
 
 header nav ul {
     display: flex;
     align-items: center;
-   justify-content: flex-start;
-   gap: 10px;
+    justify-content: flex-start;
+    gap: 10px;
     list-style: none;
     font-size: 15px;
-    
+    margin-right: 60px;
 }
 
 .left-align {
-    margin-right: auto; 
+    margin-right: auto;
 }
+
 main {
     grid-area: main;
     padding: 20px;
@@ -70,7 +78,7 @@ main {
 .background-img img {
     width: 40vw;
     height: 40vh;
-   
+
 
 }
 
@@ -87,14 +95,17 @@ main {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    
 }
+
+
+
 .wave {
     width: 98vw;
     opacity: 100%;
     position: absolute;
     z-index: -1;
 }
+
 .search input {
     width: 500px;
     height: 50px;
@@ -116,6 +127,14 @@ main {
     margin-left: 10px;
     font-weight: bolder;
     color: #fff;
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.ok-submit:hover {
+    background-color: #1167d6;
+
+
 }
 
 option {
@@ -123,9 +142,6 @@ option {
     color: #fff;
     font-size: 16px;
 }
-
-
-
 
 
 #planos {
@@ -277,7 +293,7 @@ option {
 
 .box {
     display: flex;
-    height: 300px; 
+    height: 300px;
     align-items: center;
     border: 3px solid #ccc;
     border-bottom: 3px solid #267aea;
@@ -292,14 +308,14 @@ option {
     border-radius: 100px;
 }
 
-.create-text::first-letter{
+.create-text::first-letter {
     color: #267aea;
     font-weight: bolder;
 }
 
 .content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 30px;
 }
 
@@ -325,16 +341,16 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     text-align: start;
- }
- 
+}
+
 
 
 #feedbacks {
     padding: 120px;
-    border-bottom:  3px solid #267aea;
+    border-bottom: 3px solid #267aea;
 }
 
-#feedbacks .content{
+#feedbacks .content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,7 +365,7 @@ footer {
     height: 30vh;
 }
 
-.text-payment{
+.text-payment {
     color: #267aea;
 }
 
@@ -359,6 +375,7 @@ footer {
     justify-content: center;
     margin-bottom: 10px;
 }
+
 footer nav ul {
     display: flex;
     color: #ccc;

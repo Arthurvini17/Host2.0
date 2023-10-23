@@ -21,13 +21,24 @@
                     <div class="text-login">
                         <h1>Faça seu login</h1>
                     </div>
+                    
                     <div class="form-group">
                         <label for="email">Email address</label>
+                       
+                            
                         <input type="email" name="email" placeholder="example@gmail.com">
+                        @error('email')
+                        <span id="email-error">{{$message}}</span>
+                        @enderror
                     </div>
                     <div class="form-group">
+
+                        
                         <label for="password">Password</label>
                         <input type="password" name="password" placeholder="Enter password">
+                        @error('password')
+                        <span id="password-error">{{$message}}</span>
+                        @enderror
                     </div>
 
                     <button class="submit-button" type="submit">Logar</button>

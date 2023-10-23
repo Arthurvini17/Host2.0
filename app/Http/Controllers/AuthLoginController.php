@@ -18,7 +18,13 @@ class AuthLoginController extends Controller
         $credentials = $request->validate([
             'email' =>  ['required', 'email'],
             'password' => ['required'],
+        ],
+        [
+            'email.required' => 'Esse campo tem que ser preenchido',
+            'email' => 'Digite um email valido',
+            'password.required' => 'Esse campo tem que ser preenchido'
         ]);
+   
 
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();

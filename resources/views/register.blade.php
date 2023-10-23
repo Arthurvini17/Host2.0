@@ -20,24 +20,33 @@
 
                 <form action="{{ route('register.store') }}" method="POST">
                     @csrf
-
                     <div class="text-register">
                         <h1>Faça Seu Registro</h1>
                     </div>
                     <div class="form-group">
                         <label for="name">Digite seu nome</label>
                         <input type="name" name="name">
+                        @error('name')
+                        <span id="name-error">{{$message}}</span>
+                        @enderror
                     </div>
 
 
                     <div class="form-group">
                         <label for="email">Digite seu Email</label>
                         <input type="email" name="email">
+                        @error('email')
+                        <span id="email-error">{{$message}}</span>
+                        @enderror
+
                     </div>
 
                     <div class="form-group">
                         <label for="password">Digite sua senha</label>
                         <input type="password" name="password">
+                        @error('password')
+                        <span id="password-error">{{$message}}</span>
+                        @enderror
                     </div>
 
 
